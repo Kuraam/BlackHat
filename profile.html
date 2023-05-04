@@ -1,0 +1,98 @@
+<div class="profile-card">
+	<div class="profile-card-header">
+	  <img src="https://via.placeholder.com/150x150" alt="Profile Picture">
+	  <h2>John Doe</h2>
+	  <p>johndoe@example.com</p>
+	</div>
+	<div class="profile-card-body">
+	  <div class="profile-info">
+		<h3>Account Information</h3>
+		<p><strong>Username:</strong> johndoe</p>
+		<p><strong>Password:</strong> ********</p>
+		<button id="change-password-btn">Change Password</button>
+	  </div>
+	  <div class="profile-info">
+		<h3>Shipping Information</h3>
+		<p><strong>Name:</strong> John Doe</p>
+		<p><strong>Address:</strong> 123 Main St, Anytown, USA</p>
+		<p><strong>Phone:</strong> 555-555-5555</p>
+		<button id="change-shipping-btn">Change Shipping Address</button>
+	  </div>
+	</div>
+  </div>
+
+  <script>
+	const changePasswordBtn = document.getElementById("change-password-btn");
+const changeShippingBtn = document.getElementById("change-shipping-btn");
+
+changePasswordBtn.addEventListener("click", () => {
+  const newPassword = prompt("Enter new password:");
+  // code to update password in database goes here
+});
+
+changeShippingBtn.addEventListener("click", () => {
+  const newShippingAddress = prompt("Enter new shipping address:");
+  // code to update shipping address in database goes here
+});
+
+  </script>
+  <style>
+	.profile-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.profile-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-card-header img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-card-header h2 {
+  margin: 0;
+}
+
+.profile-card-header p {
+  margin: 0;
+}
+
+.profile-card-body {
+  display: flex;
+}
+
+.profile-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.profile-info h3 {
+  margin-top: 0;
+}
+
+.profile-info p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+  </style>
+
+  
